@@ -6,7 +6,7 @@
     <div class="filler"></div>
     <nav class="flex">
         <ul class="first-list flex">
-            <li v-for="(link, index) in links" v-bind:key="index"><a href="#">{{ link.text }}</a></li>
+            <li  v-for="(link, index) in links" v-bind:key="index"><a href="#">{{ link.text }}</a></li>
         </ul>
   </nav>
   </header>
@@ -38,7 +38,9 @@ export default {
 </script>
 
 <style lang="scss" scoped> /* STYLE STARTS HERE */
-@import '../styles/general.scss'; 
+@import "../styles/general.scss"; 
+@import "../styles/vars.scss";
+@import "../styles/utilities.scss";
 
 
  header {

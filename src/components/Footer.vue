@@ -13,6 +13,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/general.scss"; 
+@import "../styles/vars.scss";
+@import "../styles/utilities.scss";
+
+
     footer {
       height: 320px;
        background-image: url("../assets/img/footer-bg.jpg"); 

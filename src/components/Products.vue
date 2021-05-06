@@ -5,7 +5,7 @@
       </div>
        <section class="blue flex">
            <ul class="second-list flex container">
-               <li v-for="(item, index) in secondLineLinks" :key="index"><a href="#">{{ item.text }}</a></li>
+               <li v-for="(item, index) in secondLineLinks" :key="index"><a href="#"> <img v-bind:src="item.image" alt="icons"> {{ item.text }}</a></li>
                <li><a href="#"></a></li>
                <li><a href="#"></a></li>
                <li><a href="#"></a></li>
@@ -22,18 +22,22 @@ export default {
     data(){
         return {
             secondLineLinks: [
-                {text: "DIGITAL COMICS", url: "/digital-comics", current: false},
-                {text: "DC MERCHANDISE", url: "/dc-merchandise", current: false},
-                {text: "SUBSCRIPTION", url: "/subscription", current: false},
-                {text: "COMIC SHOP LOCATOR", url: "/comic-shop-location", current: false},
-                {text: "DC POWER VISA", url:"dc-power-visa", current: false},
+                {text: "DIGITAL COMICS", image: "../assets/img/buy-comics-digital-comics.png",  url: "/digital-comics", current: false},
+                {text: "DC MERCHANDISE", image: "../assets/img/buy-comics-merchandise.png", url: "/dc-merchandise", current: false},
+                {text: "SUBSCRIPTION", image: "../assets/img/buy-comics-subscriptions.png", url: "/subscription", current: false},
+                {text: "COMIC SHOP LOCATOR", image: "../assets/img/buy-comics-shop-locator.png", url: "/comic-shop-location", current: false},
+                {text: "DC POWER VISA", image: "../assets/img/buy-dc-power-visa.svg", url:"dc-power-visa", current: false},
             ],
+            
         }
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/general.scss"; 
+@import "../styles/vars.scss";
+@import "../styles/utilities.scss";
 
     .grey-bg {
         height: 100px;
@@ -53,15 +57,13 @@ export default {
         list-style: none;
     }
 
-    .blue.container.flex ul li {
-        padding: 1rem;
-        font-size: 0.8rem;
-        
+    .second-list li a img {
+        width: 30px;
     }
 
+
     .blue.flex .second-list a {
-        align-items: center;
-        color: #fff;
+        color: $primary;
       }
 
 

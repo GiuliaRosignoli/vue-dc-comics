@@ -37,6 +37,7 @@ export default {
 
 <style lang="scss">
 @import "./styles/general.scss";
-
+@import  "./styles/utilities.scss";
+@import "./styles/vars.scss";
 
 </style>
