@@ -44,19 +44,17 @@ export default {
 
 
  header {
-     padding: 20px;
+     padding: 2rem;
      text-align: center;
  }
 
  .container a img {
-    width: 60px;
+    width: 5rem;
 }
 
 .first-list {
     justify-content: flex-end;
     align-items: center;
-    list-style: none;
-     
 }
 
 .first-list li a {

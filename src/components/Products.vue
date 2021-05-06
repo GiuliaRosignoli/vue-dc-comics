@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
       <div class="grey-bg">
-        <div class="container">  Content goes here  </div>
+        <div class="container temporary"> -->  Content goes here  </div>
       </div>
        <section class="blue flex">
            <ul class="second-list flex container">
@@ -39,7 +39,13 @@ export default {
 @import "../styles/vars.scss";
 @import "../styles/utilities.scss";
 
-    .grey-bg {
+    .temporary{             /* Temporay class */
+        color: $primary; 
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .grey-bg {         /* Pictures section to be created here */
         height: 100px;
         background-color: rgb(31, 30, 30);
     }
@@ -54,25 +60,20 @@ export default {
         justify-content: center;
         align-items: center;
         display: flex;
-        list-style: none;
     }
 
 
     .second-list li {
         align-items: center;
-    }
-
-    .second-list li a img {
-        width: 3rem;
-        padding: 0.5rem;
-    
-    }
-
-
-    .blue.flex .second-list a {
-        color: $primary;
+        a {
+            color: $primary;
         align-items: center;
-      }
+        }
+        a img {
+            width: 3rem;
+        padding: 0.5rem;
+        }
+    }
 
 
     
