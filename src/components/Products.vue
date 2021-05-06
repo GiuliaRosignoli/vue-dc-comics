@@ -5,11 +5,11 @@
       </div>
        <section class="blue flex">
            <ul class="second-list flex container">
-               <li v-for="(item, index) in secondLineLinks" :key="index"><a href="#"> <img v-bind:src="item.image" alt="icons"> {{ item.text }}</a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
+               <li v-for="(item, index) in secondLineLinks" :key="index"><a class="flex" href="#"> <img v-bind:src="item.image" alt="icons"> {{ item.text }}</a></li>
+               <li ><a class="flex" href="#"></a></li>
+               <li class="flex"><a href="#"></a></li>
+               <li class="flex"><a href="#"></a></li>
+               <li class="flex"><a href="#"></a></li>
            </ul>
        </section>
   </div>
@@ -57,13 +57,21 @@ export default {
         list-style: none;
     }
 
+
+    .second-list li {
+        align-items: center;
+    }
+
     .second-list li a img {
-        width: 30px;
+        width: 3rem;
+        padding: 0.5rem;
+    
     }
 
 
     .blue.flex .second-list a {
         color: $primary;
+        align-items: center;
       }
 
 
