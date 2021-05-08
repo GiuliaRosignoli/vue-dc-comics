@@ -1,11 +1,10 @@
 <template>
   <div class="wrapper">
-     
-            <div class="grey-bg">
-                <div class="comics container flex"> 
-                    <comic v-for="(comic, index) in items" :key="index" :detail="comic"  />
-                </div>
+        <div class="grey-bg">
+            <div class="comics container flex"> 
+                <comic v-for="(comic, index) in items" :key="index" :detail="comic" />
             </div>
+        </div>
 
        <section class="blue flex">
            <ul class="second-list flex container">
@@ -136,7 +135,7 @@ export default {
 @import "../styles/utilities.scss";
 
 
-
+   
     .grey-bg {         /* Pictures section to be created here */
         width: 100%;
         align-items: center;
@@ -161,20 +160,21 @@ export default {
         justify-content: center;
         align-items: center;
         display: flex;
-    }
-
-
-    .second-list li {
-        align-items: center;
-        a {
+        li {
+            align-items: center;
+              a {
             color: $primary;
-        align-items: center;
-        }
-        a img {
+            align-items: center;
+            }
+             a img {
             width: 3rem;
-        padding: 0.5rem;
+            padding: 0.5rem;
+            }
+         }
         }
-    }
+
+
+   
 
 
     

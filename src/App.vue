@@ -4,7 +4,10 @@
     <header>
        <Header />
     </header>
-  
+    <!--jumbotron -->
+    <section>
+          <Jumbotron />
+    </section>
 
   <!--Main -->
    <main>
@@ -21,6 +24,7 @@
 
 <script>
 import Header from '@/components/Header.vue';
+import Jumbotron from '@/components/Jumbotron.vue';
 import Products from '@/components/Products.vue';
 import Footer from '@/components/Footer.vue';
 
@@ -29,6 +33,7 @@ export default {
     name: 'App',
     components: {
       Header,
+      Jumbotron,
       Products,
       Footer,
     }
