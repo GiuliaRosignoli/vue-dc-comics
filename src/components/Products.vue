@@ -151,7 +151,7 @@ export default {
     }
 
     .blue {
-        height: 120px;
+        height: 110px;
         max-height: 100%;
         background-color: rgb(38, 125, 211);
     }

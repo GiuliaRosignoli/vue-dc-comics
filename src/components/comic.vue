@@ -21,7 +21,7 @@ export default {
        align-self: center;
        flex-basis: calc(100% / 6 - 20px);
        flex-wrap: wrap;
-       margin-top: 20px;
+       margin-top: 20px; 
        margin-bottom: 20px;
        padding-bottom: 10px;
        color: #fff;
