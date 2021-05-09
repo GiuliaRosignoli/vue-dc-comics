@@ -1,5 +1,5 @@
 <template>
-    <div class="single-image flex">
+    <div class="single-image flex">   <!--GALLERIES -->
        <img v-bind:src="detail.thumb" alt="detail.series">
        <h2>{{ detail.series }}</h2>
     </div>
@@ -7,11 +7,12 @@
 </template>
 
 <script>
+
 export default {
     name: "comic",
     props: ["detail"],
-
 }
+
 </script>
 
 <style lang="scss" scoped>

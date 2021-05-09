@@ -173,9 +173,5 @@ export default {
          }
         }
 
-
-   
-
-
     
 </style>
